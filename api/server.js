@@ -19,8 +19,13 @@ server.use('/api/operators',restricted, operatorsRouter);
 
 
 
-
+// res 200 
 server.get('/', () => {
+    res.status (200).json({
+        message: "Pass"
+    }
+
+    )
     console.log('welcome to Foodtruck Trackr')
 })
 
