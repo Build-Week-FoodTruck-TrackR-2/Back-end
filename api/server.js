@@ -20,7 +20,7 @@ server.use('/api/operators',restricted, operatorsRouter);
 
 
 // res 200 
-server.get('/', () => {
+server.get('/', (req,res) => {
     res.status (200).json({
         message: "Pass"
     }
